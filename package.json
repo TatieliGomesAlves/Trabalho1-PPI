@@ -1,0 +1,32 @@
+{
+  "name": "trabalho1-ppi",
+  "version": "1.0.0",
+  "description": "Trabalho Modulo 1 de PPI",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TatieliGomesAlves/Trabalho1-PPI.git"
+  },
+  "keywords": [
+    "express",
+    "sessao",
+    "nodejs",
+    "servidor",
+    "web",
+    "http"
+  ],
+  "author": "Tatieli Gomes Alves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TatieliGomesAlves/Trabalho1-PPI/issues"
+  },
+  "homepage": "https://github.com/TatieliGomesAlves/Trabalho1-PPI#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
