@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Tour</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="/estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Tour</title>
+  <link rel="stylesheet" href="/estilo.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -35,179 +37,176 @@
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/sobre.html">Sobre</a>
-            </li>         
+            </li>
           </ul>
           <form class="d-flex">
+            <a href="/login.html" class="btn btn-primary">Login</a>
             <div class="botao-cadastrar">
-              <a href="/login.html" class="btn btn-primary">Login</a>
-            </div>
-            <div class="botao-cadastrar">
-                <a href="cadastro.html" class="btn btn-outline-secondary">Cadastre-se</a>
+              <a href="/cadastro.html" class="btn btn-outline-secondary">Cadastre-se</a>
             </div>
           </form>
         </div>
       </div>
     </nav>
-</header>
+  </header>
 
-<div class="container mt-5">
-  <h2 class="titulo">Cadastre-se</h2>
-  <form id="formulario" method="post" action="#" class="label" novalidate>
-    <div class="form-group">
-      <label for="nome">Nome</label>
-      <input type="text" class="form-control bg-light" id="nome" placeholder="Digite o nome" required>
-      <small class="text-danger"></small>
+  <main>
+    <div class="container mt-5">
+      <h2 class="titulo">Cadastre-se</h2>
+      <form id="formulario" method="post" action="#" class="label" novalidate>
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" class="form-control bg-light" id="nome" placeholder="Digite o nome" required>
+          <small class="text-danger"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="sobrenome">Sobrenome</label>
+          <input type="text" class="form-control bg-light" id="sobrenome" placeholder="Digite o sobrenome completo" required>
+          <small class="text-danger"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="DatadeNascimento">Data de Nascimento</label>
+          <input type="date" class="form-control bg-light" id="DatadeNascimento" required>
+          <small class="text-danger"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="naturalidade">Naturalidade</label>
+          <input type="text" class="form-control bg-light" id="naturalidade" placeholder="Digite a cidade de nascimento" required>
+          <small class="text-danger"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="cpf">CPF</label>
+          <input type="text" class="form-control bg-light" id="cpf" placeholder="000.000.000-00" required>
+          <small class="text-danger"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="endereço">Endereço</label>
+          <input type="text" class="form-control bg-light" id="endereço" placeholder="Digite o endereço completo" required>
+          <small class="text-danger"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="cidade">Cidade</label>
+          <input type="text" class="form-control bg-light" id="cidade" placeholder="Digite a cidade" required>
+          <small class="text-danger"></small>
+        </div>
+
+        <label for="exampleDataList" class="form-label bg-light">Estado</label>
+        <input class="form-control bg-light" list="datalistOptions" id="exampleDataList" placeholder="Selecione..." required>
+        <datalist id="datalistOptions">
+          <option selected>Selecione...</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+        </datalist>
+
+        <div class="form-group">
+          <label for="cep" class="cep">CEP</label>
+          <input type="text" class="form-control bg-light" id="cep" placeholder="00000-000" required>
+          <small class="text-danger"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input type="text" class="form-control bg-light" id="telefone" placeholder="( ) 00000-0000" required>
+          <small class="text-danger"></small>
+        </div>
+
+        <div>
+          <p class="alinhar">Onde conheceu a nossa agência de viagens?</p>
+          <input type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Panfletos
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            Redes Sociais
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            Outdoor
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            Rádio
+          </label>
+        </div>
+
+        <div class="espacamento">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control bg-light" id="email" placeholder="nome@exemplo.com" required>
+            <small class="text-danger"></small>
+          </div>
+        </div>
+
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" class="form-control" aria-describedby="passwordHelpBlock">
+        <small id="passwordHelpBlock" class="form-text text-muted">
+          Sua senha deve ter de 8 a 20 caracteres, conter letras e números e não deve conter espaços, caracteres especiais ou emojis.
+        </small>
+
+        <div style="display:none;" id="msgsucesso" class="alert alert-primary" role="alert">Cadastro Realizado com Sucesso!
+        </div>
+        <section class="botao">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button class="btn btn-secondary" type="button" onclick="history.back()">Voltar</button>
+        </section>
+      </form>
     </div>
 
-    <div class="form-group">
-      <label for="sobrenome">Sobrenome</label>
-      <input type="text" class="form-control bg-light" id="sobrenome" placeholder="Digite o sobrenome completo" required>
-      <small class="text-danger"></small>
+    <div id="mensagem">
     </div>
 
-    <div class="form-group">
-      <label for="DatadeNascimento">Data de Nascimento</label>
-      <input type="date" class="form-control bg-light" id="DatadeNascimento"required>
-      <small class="text-danger"></small>
+    <div id="espacoTabela">
     </div>
+  </main>
 
-    <div class="form-group">
-      <label for="naturalidade">Naturalidade</label>
-      <input type="text" class="form-control bg-light" id="naturalidade" placeholder="Digite a cidade de nascimento" required>
-      <small class="text-danger"></small>
-    </div>
-
-    <div class="form-group">
-      <label for="cpf">CPF</label>
-      <input type="text" class="form-control bg-light" id="cpf" placeholder="000.000.000-00" required>
-      <small class="text-danger"></small>
-    </div>
-
-    <div class="form-group">
-      <label for="endereço">Endereço</label>
-      <input type="text" class="form-control bg-light" id="endereço" placeholder="Digite o endereço completo" required>
-      <small class="text-danger"></small>
-    </div>
-
-    <div class="form-group">
-      <label for="cidade">Cidade</label>
-      <input type="text" class="form-control bg-light" id="cidade" placeholder="Digite a cidade" required>
-      <small class="text-danger"></small>
-    </div>
-
-    <label for="exampleDataList" class="form-label bg-light">Estado</label>
-    <input class="form-control bg-light" list="datalistOptions" id="exampleDataList" placeholder="Selecione..." required>
-    <datalist id="datalistOptions">
-      <option selected>Selecione...</option>
-      <option value="AC">Acre</option>
-      <option value="AL">Alagoas</option>
-      <option value="AP">Amapá</option>
-      <option value="AM">Amazonas</option>
-      <option value="BA">Bahia</option>
-      <option value="CE">Ceará</option>
-      <option value="DF">Distrito Federal</option>
-      <option value="ES">Espírito Santo</option>
-      <option value="GO">Goiás</option>
-      <option value="MA">Maranhão</option>
-      <option value="MT">Mato Grosso</option>
-      <option value="MS">Mato Grosso do Sul</option>
-      <option value="MG">Minas Gerais</option>
-      <option value="PA">Pará</option>
-      <option value="PB">Paraíba</option>
-      <option value="PR">Paraná</option>
-      <option value="PE">Pernambuco</option>
-      <option value="PI">Piauí</option>
-      <option value="RJ">Rio de Janeiro</option>
-      <option value="RN">Rio Grande do Norte</option>
-      <option value="RS">Rio Grande do Sul</option>
-      <option value="RO">Rondônia</option>
-      <option value="RR">Roraima</option>
-      <option value="SC">Santa Catarina</option>
-      <option value="SP">São Paulo</option>
-      <option value="SE">Sergipe</option>
-      <option value="TO">Tocantins</option>
-    </datalist>
-
-    <div class="form-group">
-      <label for="cep" class="cep">CEP</label>
-      <input type="text" class="form-control bg-light" id="cep" placeholder="00000-000" required>
-      <small class="text-danger"></small>
-    </div>
-
-    <div class="form-group">
-      <label for="telefone">Telefone</label>
-      <input type="text" class="form-control bg-light" id="telefone" placeholder="( ) 00000-0000" required>
-      <small class="text-danger"></small>
-    </div>
-
-    <div>
-      <p class="alinhar">Onde conheceu a nossa agência de viagens?</p>
-      <input type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        Panfletos
-      </label>
-    </div>
-
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-      <label class="form-check-label" for="flexCheckChecked">
-        Redes Sociais
-      </label>
-    </div>
-
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-      <label class="form-check-label" for="flexCheckChecked">
-        Outdoor
-      </label>
-    </div>
-
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-      <label class="form-check-label" for="flexCheckChecked">
-        Rádio
-      </label>
-    </div>
-   
-    <div class="espacamento">
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input type="email" class="form-control bg-light" id="email" placeholder="nome@exemplo.com" required>
-      <small class="text-danger"></small>
-    </div>
-  </div>
-    
-
-    <label for="inputPassword5">Senha</label>
-    <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-    <small id="passwordHelpBlock" class="form-text text-muted">
-      Sua senha deve ter de 8 a 20 caracteres, conter letras e números e não deve conter espaços, caracteres especiais ou emojis.
-    </small>  
-    
-    <div style="display:none;" id="msgsucesso" class="alert alert-primary" role="alert">Formulário Enviado com Sucesso!
-    </div>
-    <section class="botao">
-      <button type="submit" class="btn btn-primary">Enviar</button>
-      <button class="btn btn-warning" id='atualizar' type="button">Atualizar</button>
-      <button class="btn btn-danger" id='excluir' type="button">Excluir</button>
-      <button class="btn btn-secondary" type="button" onclick="history.back()">Voltar</button>
-    </section>
-  </form>
-</div>
-
-<div id="mensagem">
-</div>
-
-<div id="espacoTabela">
-</div>
-
-
-<footer>
-        <p>&copy; 2025 <em>World Tour</em>. Todos os direitos reservados.</p>
-</footer>
+  <footer>
+    <p>&copy; 2025 <em>World Tour</em>. Todos os direitos reservados.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script src="/scriptcadastro.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-<script src="/scriptcadastro.js"></script>
 
 </html>

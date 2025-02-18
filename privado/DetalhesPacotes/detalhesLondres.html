@@ -53,20 +53,21 @@
     <main>
         <h2><b>Pacote para Londres</b></h2>
         <div class="posicao-img">
-          <img src="/londres.jpeg" class="imagens-pag-detalhes" alt="imagemLondres">
+          <img src="/Londres.jpg" class="imagens-pag-detalhes" alt="imagemLondres">
         </div> 
         <div id="detalhes-pacote" class="alinhar-detalhes">
-            <p><strong>Destino:</strong> A mais bela cidade de Londres! <span id="destino-pacote"></span></p>
-            <p><strong>Descrição:</strong> Londres, capital da Inglaterra e do Reino Unido, é uma cidade do século 21 com uma história que remonta à era romana. Seu centro abriga as sedes imponentes do Parlamento, a famosa torre do relógio do Big Ben e a Abadia de Westminster, local de coroação dos monarcas britânicos. Do outro lado do rio Tâmisa, a roda gigante London Eye tem vista panorâmica do complexo cultural da margem sul e de toda a cidade. <span id="descricao-pacote"></span></p>
+            <p><strong>Destino:</strong> A mais bela cidade de Londres!<span id="destino-pacote"></span></p>
+            <p><strong>Descrição:</strong> Londres, capital da Inglaterra e do Reino Unido, é uma cidade do século 21 com uma história que remonta à era romana. Seu centro abriga as sedes imponentes do Parlamento, a famosa torre do relógio do Big Ben e a Abadia de Westminster, local de coroação dos monarcas britânicos. Do outro lado do rio Tâmisa, a roda gigante London Eye tem vista panorâmica do complexo cultural da margem sul e de toda a cidade.<span id="descricao-pacote"></span></p>
             <p><strong>Incluso:</strong> Passagens aéreas, hospedagem e café da manhã no Hotel London-Eye, translado ida e volta e guia turístico. <span id="data-pacote"></span></p>
             <p><strong>Duração:</strong> 05 dias <span id="data-pacote"></span></p>
-            <p><strong>Local da Partida:</strong> Aeroporto de Guarulhos <span id="partida-pacote"></span></p>
-            <p><strong>Preço:</strong> R$ R$ 5.500,00 por viajante<span id="preco-pacote"></span></p>
+            <p><strong>Local da Partida:</strong> Aeroporto de Guarulhos-SP<span id="partida-pacote"></span></p>
+            <p><strong>Local de Destino:</strong> Aeroporto de Londres Heathrow-LHR<span id="partida-pacote"></span></p>
+            <p><strong>Preço:</strong> A partir de R$ R$5.500,00 por viajante<span id="preco-pacote"></span></p>
             <p><strong>Quantidade de lugares disponíveis:</strong> 08</p>
 
             <label for="quantidade"><strong>Quantidade de lugares:</strong></label>
             <input type="number" id="numLugares" name="numLugares" min="1" max="8" value="1" onchange="atualizarPreco()">
-            <p><strong>Total: R$ <span id="precoTotal">5.500,00</strong></span></p>
+            <p class="total"><strong>Total: R$ <span id="precoTotal">5.500,00</strong></span></p>
             <section class="botao-comprar">
               <button id="finalizarReservaBtn" onclick="finalizarReserva()" class="btn btn-primary btn-lg">Finalizar Reserva</button>
             </section>

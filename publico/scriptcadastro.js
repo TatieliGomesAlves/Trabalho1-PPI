@@ -235,9 +235,10 @@ document
     }
     if (valido) {
       limparCampos();
-      alert("Formulário enviado com sucesso!");
+      alert("Cadastro Realizado com Sucesso!");
     }
   });
+
 
 // -------------------------------- ONBLUR -------------------------------------
 

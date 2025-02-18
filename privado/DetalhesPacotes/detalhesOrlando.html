@@ -59,26 +59,26 @@
     <p><strong>Descrição:</strong> Há restaurante Walt Disney World Resort, comumente conhecido como Walt Disney World e informalmente Disney World, é o resort de entretenimento mais visitado em todo o mundo, situado em Bay Lake, Flórida, próxima a cidade de Orlando. <span id="descricao-pacote"></span></p>
     <p><strong>Incluso:</strong> Passagens aéreas, hospedagem e café da manhã no Hotel Disney's Animal Kingdom Lodge, translado ida e volta e guia turístico.<span id="data-pacote"></span></p>
     <p><strong>Duração:</strong> 10 dias <span id="data-pacote"></span></p>
-    <p><strong>Local da Partida:</strong>  Aeroporto de Viracopos<span id="partida-pacote"></span><p>
-    <p><strong>Preço:</strong> R$ 10.500,00 por viajante <span id="preco-pacote"></span></p>
+    <p><strong>Local da Partida:</strong>  Aeroporto de Viracopos-SP<span id="partida-pacote"></span><p>
+    <p><strong>Local de Destino</strong> Aeroporto Internacional de Orlando-MCO<span id="partida-pacote"></span><p>
+    <p><strong>Preço:</strong> A partir de R$9.125,80 por viajante <span id="preco-pacote"></span></p>
   <p><strong>Quantidade de lugares disponíveis:</strong> 04</p>
 
   <label for="quantidade"><strong>Quantidade de lugares:</strong></label>
-  <input type="number" id="quantidade" name="quantidade" min="1" max="10" value="1">
-  <p><strong>Total: R$<span id="total">10.500,00</strong></span></p>
+  <input type="number" id="numLugares" name="numLugares" min="1" max="4" value="1" onchange="atualizarPreco()">
+  <p class="total"><strong>Total: R$ <span id="precoTotal">9.125,80</strong></span></p>
   <section class="botao-comprar">
-    <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
-</section>
+    <button id="finalizarReservaBtn" onclick="finalizarReserva()" class="btn btn-primary btn-lg">Finalizar Reserva</button>
+  </section>
 </div>
 </main>
 
     <footer>
         <p>&copy; 2025 <em>World Tour</em>. Todos os direitos reservados.</p>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="/scriptcalculoOrlando.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-<script src="/scriptcalculoOrlando.js"></script>
 </html>
 

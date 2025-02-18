@@ -1,9 +1,9 @@
 function atualizarPreco() {
-  const precoPorPessoa = 20.000;
+  const precoPorPessoa = 8673.43;
   const quantidadeLugares = document.getElementById('numLugares').value; 
   const precoTotal = precoPorPessoa * quantidadeLugares;
   
-  const precoTotalFormatado = precoTotal.toLocaleString('pt-BR', {style:'decimal',minimumFractionDigits: 5, maximumFractionDigits: 5 });
+  const precoTotalFormatado = precoTotal.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
 document.getElementById('precoTotal').innerText = precoTotalFormatado;
 }

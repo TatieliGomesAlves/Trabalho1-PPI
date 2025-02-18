@@ -11,13 +11,20 @@ body {
 }
 
 main {
-  min-height: 100vh;
+  min-height: calc(100vh - 97px);
 }
 
 .card-wraper {
   display: flex;
   column-gap: 24px;
   justify-content: center;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+  row-gap: 16px;
+}
+
+.card {
+  max-width: 25rem;
 }
 
 footer {
@@ -41,6 +48,11 @@ h2 {
   padding-bottom: 50px;
 }
 
+.total {
+  padding-top: 15px;
+  font-size: 25px;
+}
+
 .pagina-sobre {
   margin: 50px;
   text-align: justify;
@@ -49,9 +61,13 @@ h2 {
 }
 
 .botao-cadastrar {
-  margin-left: 30px;
-  margin-right: 10px;
+  margin-left: 20px;
 }
+
+.botoes-login-cadastrar {
+  justify-content: space-between;
+}
+
 .alinhar-input {
   padding: 400px;
   padding-top: 0;
@@ -74,7 +90,7 @@ h2 {
 }
 
 .alinhar-detalhes {
-  padding: 100px;
+  padding: 50px;
   font-size: 19px;
   text-align: justify;
 }
@@ -88,7 +104,10 @@ h2 {
 
 .posicao-img {
   width: 100%;
+}
 
+.botoes-login {
+  padding-top: 20px;
 }
 
 /* formulario de cadastro */
@@ -128,4 +147,24 @@ h2 {
 
 .cep {
   padding-top: 16px;
+}
+
+/* mobile */
+@media screen and (max-width: 420px) {
+  .card-wraper {
+    flex-direction: column;
+  }
+  .alinhar-detalhes {
+    padding: 25px;
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width: 1024px) {
+  .alinhar-detalhes {
+    padding: 50px;
+  }
+
+  .card-wraper .card {
+    max-width: 40%;
+  }
 }
